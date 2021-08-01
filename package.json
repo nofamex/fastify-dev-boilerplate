@@ -1,0 +1,23 @@
+{
+  "name": "fastify-api",
+  "version": "1.0.0",
+  "description": "simple fastify-api with rest principle",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start:dev": "nodemon dist/src/app.js",
+    "build:dev": "tsc --watch --preserveWatchOutput",
+    "dev": "concurrently \"npm:build:dev\" \"npm:start:dev\""
+  },
+  "author": "nofamex",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.4.9",
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "fastify": "^3.19.2"
+  }
+}
