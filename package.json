@@ -4,13 +4,11 @@
   "description": "simple fastify-api with rest principle",
   "main": "dist/src/index.js",
   "scripts": {
-    "test": "echo \"Running tests... \n Done.\" && exit 0",
-    "lint": "echo \"Running lint... \n Done.\" && exit 0",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "build": "tsc --build",
     "watch": "tsc --watch",
-    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json",
-    "prepare": "husky install"
+    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json"
   },
   "author": "nofamex",
   "license": "MIT",
@@ -22,7 +20,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-unicorn": "^34.0.1",
-    "husky": "^7.0.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "ts-node": "^10.1.0",
