@@ -9,7 +9,8 @@
     "lint:fix": "eslint --fix .",
     "build": "tsc --build",
     "watch": "tsc --watch",
-    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json"
+    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json",
+    "prepare": "husky install"
   },
   "author": "nofamex",
   "license": "MIT",
