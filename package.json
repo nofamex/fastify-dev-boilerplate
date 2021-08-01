@@ -6,17 +6,32 @@
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --watch",
-    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json"
+    "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json",
+    "prepare": "husky install"
   },
   "author": "nofamex",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.4.9",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unicorn": "^34.0.1",
+    "husky": "^7.0.0",
     "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
     "fastify": "^3.19.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
   }
 }
