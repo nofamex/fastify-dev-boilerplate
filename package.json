@@ -5,7 +5,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "test": "echo \"Running tests... \n Done.\" && exit 0",
-    "lint": "eslint .",
+    "lint": "echo \"Running lint... \n Done.\" && exit 0",
     "lint:fix": "eslint --fix .",
     "build": "tsc --build",
     "watch": "tsc --watch",
@@ -30,11 +30,5 @@
   },
   "dependencies": {
     "fastify": "^3.19.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint && npm run test"
-    }
   }
 }
