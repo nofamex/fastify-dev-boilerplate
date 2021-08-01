@@ -4,8 +4,6 @@
   "description": "simple fastify-api with rest principle",
   "main": "dist/src/index.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
     "build": "tsc --build",
     "watch": "tsc --watch",
     "dev": "npx nodemon -L --watch src/ --exec ts-node src/index.ts --project tsconfig.json"
@@ -14,12 +12,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.4.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-unicorn": "^34.0.1",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "ts-node": "^10.1.0",
